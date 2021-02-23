@@ -1,0 +1,14 @@
+1. Create
+kubectl run nginx --image=nginx
+
+2. Retrieve
+kubectl get pods
+kubectl get pods -o wide
+
+3. Inspect
+kubectl describe pod webapp1
+kubectl describe pod webapp1
+kubectl describe pod webapp1 | grep -i image
+
+4. Remove
+kubectl delete pod webapp
