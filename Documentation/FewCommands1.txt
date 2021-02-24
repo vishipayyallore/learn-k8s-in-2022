@@ -1,0 +1,8 @@
+i - Insert at cursor (goes into insert mode)
+a - Write after cursor (goes into insert mode)
+A - Write at the end of line (goes into insert mode)
+ESC - Terminate insert mode
+
+:w - Save the file but keep it open
+:q - Quit without saving
+:wq - Save the file and quit

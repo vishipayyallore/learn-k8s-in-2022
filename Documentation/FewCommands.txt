@@ -6,9 +6,28 @@ kubectl get pods
 kubectl get pods -o wide
 
 3. Inspect
-kubectl describe pod webapp1
-kubectl describe pod webapp1
-kubectl describe pod webapp1 | grep -i image
+kubectl describe pod <pod-name>
+kubectl describe pod <pod-name> | grep -i image
 
 4. Remove
-kubectl delete pod webapp
+kubectl delete pod <pod-name>
+
+5. Edit
+kubectl edit pod <pod-name>
+
+5. Retrieve POD definition
+kubectl get pod <pod-name> -o yaml > pod-definition.yaml
+kubectl run nginx --image=nginx --dry-run=client -o yaml > pod-definition.yaml
+
+6. Apply
+kubectl apply -f pod-definition.yaml
+
+7. Replicaset
+kubectl get replicaset
+kubectl describe replicaset <replicaset-name>
+kubectl explain replicaset | grep VERSION
+kubectl apply -f replicaset-definition-1.yaml
+kubectl delete replicaset <replicaset-name>
+kubectl edit replicaset <replicaset-name>
+kubectl delete pod <pod-name>
+kubectl scale replicaset --replicas=5 <replicaset-name>
