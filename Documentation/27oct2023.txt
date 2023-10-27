@@ -1,0 +1,9 @@
+which kubectl
+kubectl version --output=yaml
+kubectl version --client --output=yaml
+
+kubectl config -h
+cat /C/Users/PK.Viswanatha-Swamy/.kube/config
+kubectl config get-contexts
+kubectl config current-context
+kubectl config use-context docker-desktop
