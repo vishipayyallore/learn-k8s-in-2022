@@ -7,3 +7,4 @@ cat /C/Users/PK.Viswanatha-Swamy/.kube/config
 kubectl config get-contexts
 kubectl config current-context
 kubectl config use-context docker-desktop
+kubectl cluster-info
